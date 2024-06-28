@@ -337,10 +337,11 @@
         }
 
         .message_content {
-            /* Pull message content up closer to sender,
-               just shy of the full vertical space. */
+            /* Pull message content up closer to sender to
+               let the text baseline sit adjacent the bottom
+               of the avatar. */
             margin-top: calc(
-                var(--message-box-markdown-aligned-vertical-space) * 0.9 * -1
+                var(--message-box-markdown-aligned-vertical-space) * 0.5 * -1
             );
             padding-top: 0;
             grid-area: message;
